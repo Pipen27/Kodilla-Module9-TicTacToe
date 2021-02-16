@@ -1,26 +1,22 @@
 package com.kodilla.TicTacToe;
 
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
-import javafx.scene.layout.*;
-
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import javafx.application.Application;
 
-import javax.print.DocFlavor;
-import javax.swing.*;
-import javax.swing.plaf.basic.BasicOptionPaneUI;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
-import java.util.Vector;
 
 
 public class TicTacToe extends Application {
-    private Label status = new Label();
-    private Button button = new Button();
 
+    private Label status1 = new Label();
+    private Label status2 = new Label();
 
 
 
@@ -35,148 +31,228 @@ public class TicTacToe extends Application {
 
 
         Button button1 = new Button("CLICK");
+        Button button2 = new Button("CLICK");
+        Button button3 = new Button("CLICK");
+        Button button4 = new Button("CLICK");
+        Button button5 = new Button("CLICK");
+        Button button6 = new Button("CLICK");
+        Button button7 = new Button("CLICK");
+        Button button8 = new Button("CLICK");
+        Button button9 = new Button("CLICK");
+
+        List<Button>  buttons = new ArrayList<>();
+        buttons.add(button1);
+        buttons.add(button2);
+        buttons.add(button3);
+        buttons.add(button4);
+        buttons.add(button5);
+        buttons.add(button6);
+        buttons.add(button7);
+        buttons.add(button8);
+        buttons.add(button9);
+
+
         button1.setPrefWidth(100);
         button1.setPrefHeight(100);
         button1.setOnAction((ActionEvent e) -> {
             button1.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button1.setDisable(true);
-            button.setText("O");
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button2 = new Button("CLICK");
+
+
         button2.setPrefWidth(100);
         button2.setPrefHeight(100);
         button2.setOnAction((ActionEvent e) -> {
             button2.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button2.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button3 = new Button("CLICK");
+
         button3.setPrefWidth(100);
         button3.setPrefHeight(100);
         button3.setOnAction((ActionEvent e) -> {
             button3.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button3.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button4 = new Button("CLICK");
+
         button4.setPrefWidth(100);
         button4.setPrefHeight(100);
         button4.setOnAction((ActionEvent e) -> {
             button4.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button4.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button5 = new Button("CLICK");
+
         button5.setPrefWidth(100);
         button5.setPrefHeight(100);
         button5.setOnAction((ActionEvent e) -> {
             button5.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button5.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button6 = new Button("CLICK");
+
         button6.setPrefWidth(100);
         button6.setPrefHeight(100);
         button6.setOnAction((ActionEvent e) -> {
             button6.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button6.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button7 = new Button("CLICK");
+
         button7.setPrefWidth(100);
         button7.setPrefHeight(100);
         button7.setOnAction((ActionEvent e) -> {
             button7.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button7.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button8 = new Button("CLICK");
+
         button8.setPrefWidth(100);
         button8.setPrefHeight(100);
         button8.setOnAction((ActionEvent e) -> {
             button8.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button8.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         });
 
-        Button button9 = new Button("CLICK");
+
         button9.setPrefWidth(100);
         button9.setPrefHeight(100);
         button9.setOnAction((ActionEvent e) -> {
             button9.setText("X");
+            checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button9.setDisable(true);
-            draw0();
+            computerMove(buttons);
+            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         }
         );
-
-
-        public void drawO(){
-
-            Random a = new Random();
-            int n = a.nextInt(9);
-            n+=1;
-
-            if (!button1.isDisabled() || !button2.isDisabled() || !button3.isDisabled()
-                    || !button4.isDisabled() || !button5.isDisabled() || !button6.isDisabled()
-                    || !button7.isDisabled() || !button8.isDisabled() || !button9.isDisabled()){
-                button+n.setText("O");
-            }
-        }
-
-        public boolean checkForWin(){
-
-            if (button1.getText().equals(button2.getText()) && button2.getText().equals(button3.getText())  ){
-                return true;
-            } else if(button4.getText().equals(button5.getText()) && button5.getText().equals(button6.getText())){
-                return true;
-            }else if(button7.getText().equals(button8.getText()) && button8.getText().equals(button9.getText())){
-                return true;
-            }else if(button1.getText().equals(button4.getText()) && button4.getText().equals(button7.getText())){
-                return true;
-            }else if(button2.getText().equals(button5.getText()) && button5.getText().equals(button8.getText())){
-                return true;
-            }else if(button3.getText().equals(button6.getText()) && button6.getText().equals(button9.getText())){
-                return true;
-            }else if(button1.getText().equals(button5.getText()) && button5.getText().equals(button9.getText())){
-                return true;
-            }else if(button3.getText().equals(button5.getText()) && button5.getText().equals(button7.getText())){
-                return true;
-            }else{
-                return false;
-            }
-        }
-
-        if(checkForWin == true){
-            status.setText("Wygrałeś. Koniec gry.");
-        }
-
-
 
         GridPane root = new GridPane();
 
         root.addRow(1, button1, button2, button3);
         root.addRow(2, button4, button5, button6);
         root.addRow(3, button7, button8, button9);
-        root.addColumn(1, button1, button4, button7);
-        root.addColumn(2, button2, button5, button8);
-        root.addColumn(3, button3, button6, button9);
+        root.addRow(4, status1, status2);
 
 
-        Scene scene1 = new Scene(root, 300, 300);
+
+        Scene scene1 = new Scene(root, 400, 400);
 
 
         primaryStage.setTitle("TicTacToe");
         primaryStage.setScene(scene1);
         primaryStage.show();
 
+
+
+
     }
+
+    private void checkWinX(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
+        if (button1.getText() == "X" && button2.getText() == "X" && button3.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button4.getText() == "X" && button5.getText() == "X" && button6.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button7.getText() == "X" && button8.getText() == "X" && button9.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button1.getText() == "X" && button4.getText() == "X" && button7.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button2.getText() == "X" && button5.getText() == "X" && button8.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button3.getText() == "X" && button6.getText() == "X" && button9.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button1.getText() == "X" && button5.getText() == "X" && button9.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        } else if (button3.getText() == "X" && button5.getText() == "X" && button7.getText() == "X") {
+            status1.setText("WYGRANA X");
+
+
+        }
+    }
+
+
+    private void checkWinO(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
+        if (button1.getText() == "O" && button2.getText() == "O" && button3.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button4.getText() == "O" && button5.getText() == "O" && button6.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button7.getText() == "O" && button8.getText() == "O" && button9.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button1.getText() == "O" && button4.getText() == "O" && button7.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button2.getText() == "O" && button5.getText() == "O" && button8.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button3.getText() == "O" && button6.getText() == "O" && button9.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button1.getText() == "O" && button5.getText() == "O" && button9.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        } else if (button3.getText() == "O" && button5.getText() == "O" && button7.getText() == "O") {
+            status2.setText("WYGRANA O");
+
+        }
+    }
+
+
+    private void computerMove(List<Button> buttons) {
+        List <Button> clickList = new ArrayList<>();
+        for(Button onlyClick : buttons){
+           if( onlyClick.getText().equals("CLICK")){
+               clickList.add(onlyClick);
+           }
+        }
+
+        Random a = new Random();
+        int index = a.nextInt(clickList.size());
+        Button emptyButton = clickList.get(index);
+        emptyButton.setText("O");
+    }
+
 }
 
 
