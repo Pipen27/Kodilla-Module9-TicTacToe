@@ -19,6 +19,10 @@ import java.util.Vector;
 
 public class TicTacToe extends Application {
     private Label status = new Label();
+    private Button button = new Button();
+
+
+
 
     public static void main(String[] args) {
         launch(args);
@@ -36,7 +40,7 @@ public class TicTacToe extends Application {
         button1.setOnAction((ActionEvent e) -> {
             button1.setText("X");
             button1.setDisable(true);
-            draw0();
+            button.setText("O");
         });
 
         Button button2 = new Button("CLICK");
