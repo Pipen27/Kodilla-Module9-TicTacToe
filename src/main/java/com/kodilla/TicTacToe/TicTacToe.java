@@ -259,17 +259,17 @@ public class TicTacToe extends Application {
     }
 
     private boolean checkWinX(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
-        if (button1.getText() == "X" && button2.getText() == "X" && button3.getText() == "X") {
+        if (button1.getText().equals("X") && button2.getText().equals("X") && button3.getText().equals("X")) {
             status1.setText("WYGRANA X");
             allButtonsDisable(button1, button2, button3, button4, button5, button6, button7, button8, button9);
 
 
-        } else if (button4.getText() == "X" && button5.getText() == "X" && button6.getText() == "X") {
+        } else if (button4.getText().equals("X") && button5.getText().equals("X") && button6.getText().equals("X")) {
             status1.setText("WYGRANA X");
             allButtonsDisable(button1, button2, button3, button4, button5, button6, button7, button8, button9);
 
 
-        } else if (button7.getText() == "X" && button8.getText() == "X" && button9.getText() == "X") {
+        } else if (button7.getText().equals("X") && button8.getText().equals("X") && button9.getText().equals("X")) {
             status1.setText("WYGRANA X");
             allButtonsDisable(button1, button2, button3, button4, button5, button6, button7, button8, button9);
 
@@ -364,28 +364,30 @@ public class TicTacToe extends Application {
 
 
         private void computerMove(List<Button> buttons) {
-        List <Button> clickList = new ArrayList<>();
-        for(Button onlyClick : buttons){
-           if( onlyClick.getText().equals("CLICK")){
-               clickList.add(onlyClick);
-           }
+            List<Button> clickList = new ArrayList<>();
+            for (Button onlyClick : buttons) {
+                if (onlyClick.getText().equals("CLICK")) {
+                    clickList.add(onlyClick);
+                }
+            }
+
+            Random a = new Random();
+            if (clickList.size() >= 1) {
+                int index = a.nextInt(clickList.size());
+
+
+                Button emptyButton = clickList.get(index);
+                emptyButton.setText("O");
+                emptyButton.setDisable(true);
+            }else{
+                status4.setMaxWidth(100);
+                status4.setWrapText(true);
+                status4.setText("END of the game or NO MORE moves");
+            }
+
         }
 
-        Random a = new Random();
-        int index = a.nextInt(clickList.size());
-        if(clickList.size()<1 ) {
 
-        status4.setMaxWidth(100);
-        status4.setWrapText(true);
-        status4.setText("END of the game or NO MORE moves");
-
-        }else{
-        Button emptyButton = clickList.get(index);
-        emptyButton.setText("O");
-        emptyButton.setDisable(true);}
-        System.out.println(clickList.size());
-
-    }
 
     private void allButtonsDisable(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9){
 
