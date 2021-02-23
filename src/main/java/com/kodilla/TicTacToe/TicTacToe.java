@@ -66,10 +66,15 @@ public class TicTacToe extends Application {
             button1.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button1.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -80,10 +85,15 @@ public class TicTacToe extends Application {
             button2.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button2.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -93,10 +103,15 @@ public class TicTacToe extends Application {
             button3.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button3.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -106,10 +121,15 @@ public class TicTacToe extends Application {
             button4.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button4.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -119,10 +139,15 @@ public class TicTacToe extends Application {
             button5.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button5.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -132,10 +157,15 @@ public class TicTacToe extends Application {
             button6.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button6.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -145,10 +175,15 @@ public class TicTacToe extends Application {
             button7.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button7.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -158,10 +193,15 @@ public class TicTacToe extends Application {
             button8.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button8.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+            if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+                checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            } else { computerMove(buttons);
+                checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+            }
         });
 
 
@@ -171,10 +211,15 @@ public class TicTacToe extends Application {
             button9.setText("X");
             checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9);
             button9.setDisable(true);
-            computerMove(buttons);
-            checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-            checkStatus();
+                if (checkWinX(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){}
+
+            else if(checkTie(button1, button2, button3, button4, button5, button6, button7, button8, button9)==true){
+            checkStatus(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+                } else { computerMove(buttons);
+                    checkWinO(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+
+                    }
         }
         );
 
@@ -213,7 +258,7 @@ public class TicTacToe extends Application {
 
     }
 
-    private void checkWinX(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
+    private boolean checkWinX(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
         if (button1.getText() == "X" && button2.getText() == "X" && button3.getText() == "X") {
             status1.setText("WYGRANA X");
             allButtonsDisable(button1, button2, button3, button4, button5, button6, button7, button8, button9);
@@ -255,7 +300,7 @@ public class TicTacToe extends Application {
 
 
         }
-    }
+    return false;}
 
 
     private void checkWinO(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
@@ -294,17 +339,21 @@ public class TicTacToe extends Application {
         }
     }
 
-    private void checkTie(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
+    private boolean checkTie(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9) {
         if (button1.getText() != "CLICK" && button2.getText() != "CLICK" && button3.getText() != "CLICK" &&
             button4.getText() != "CLICK" && button5.getText() != "CLICK" && button6.getText() != "CLICK" &&
-            button7.getText() != "CLICK" && button8.getText() != "CLICK" && button9.getText() != "CLICK") {
+            button7.getText() != "CLICK" && button8.getText() != "CLICK" && button9.getText() != "CLICK" &&
+            status1.getText() != "WYGRANA X" && status2.getText() != "WYGRANA O") {
+            status1.setText("");
+            status2.setText("");
             status3.setText("REMIS");
             allButtonsDisable(button1, button2, button3, button4, button5, button6, button7, button8, button9);
         }
-    }
+    return false;}
 
-    private void checkStatus (){
+    private void checkStatus (Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9){
         if (status1.getText() == "WYGRANA X" || status2.getText() == "WYGRANA O" || status3.getText() == "REMIS" ){
+            allButtonsDisable(button1, button2, button3, button4, button5, button6, button7, button8, button9);
 
             status4.setMaxWidth(100);
             status4.setWrapText(true);
@@ -324,7 +373,7 @@ public class TicTacToe extends Application {
 
         Random a = new Random();
         int index = a.nextInt(clickList.size());
-        if(clickList.size()<2 ) {
+        if(clickList.size()<1 ) {
 
         status4.setMaxWidth(100);
         status4.setWrapText(true);
@@ -332,7 +381,8 @@ public class TicTacToe extends Application {
 
         }else{
         Button emptyButton = clickList.get(index);
-        emptyButton.setText("O");}
+        emptyButton.setText("O");
+        emptyButton.setDisable(true);}
         System.out.println(clickList.size());
 
     }
