@@ -1,6 +1,24 @@
 org/openjfx/MainApp.java
  org.openjfx.MainApp
-com/kodilla/TicTacToe/Buttons.java
- com.kodilla.TicTacToe.Buttons
+com/kodilla/TicTacToe/ButtonsCreator.java
+ com.kodilla.TicTacToe.ButtonsCreator
+com/kodilla/TicTacToe/WinOChecker.java
+ com.kodilla.TicTacToe.WinOChecker
+com/kodilla/TicTacToe/TieChecker.java
+ com.kodilla.TicTacToe.TieChecker
+com/kodilla/TicTacToe/AllButtonsDisabler.java
+ com.kodilla.TicTacToe.AllButtonsDisabler
+com/kodilla/TicTacToe/ComputerMover.java
+ com.kodilla.TicTacToe.ComputerMover
+com/kodilla/TicTacToe/NewGameButton.java
+ com.kodilla.TicTacToe.NewGameButton
+com/kodilla/TicTacToe/ExitGameButton.java
+ com.kodilla.TicTacToe.ExitGameButton
+com/kodilla/TicTacToe/StatusChecker.java
+ com.kodilla.TicTacToe.StatusChecker
+com/kodilla/TicTacToe/WinXChecker.java
+ com.kodilla.TicTacToe.WinXChecker
+com/kodilla/TicTacToe/UserMover.java
+ com.kodilla.TicTacToe.UserMover
 com/kodilla/TicTacToe/TicTacToe.java
  com.kodilla.TicTacToe.TicTacToe
