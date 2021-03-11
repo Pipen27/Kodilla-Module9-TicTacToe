@@ -1,12 +1,11 @@
 package com.kodilla.TicTacToe;
 
 import javafx.scene.control.Button;
-
 import java.util.List;
 
 public class AllButtonsDisabler {
 
-    public void allButtonsDisable(List<Button> buttons){
+    public void allButtonsDisable(List<Button> buttons) {
 
         buttons.get(0).setDisable(true);
         buttons.get(1).setDisable(true);
@@ -17,8 +16,6 @@ public class AllButtonsDisabler {
         buttons.get(6).setDisable(true);
         buttons.get(7).setDisable(true);
         buttons.get(8).setDisable(true);
-
-
 
     }
 }

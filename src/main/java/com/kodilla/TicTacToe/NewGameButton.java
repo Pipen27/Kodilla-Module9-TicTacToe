@@ -2,17 +2,12 @@ package com.kodilla.TicTacToe;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
 import java.util.List;
 
 public class NewGameButton {
 
-    public Label status1;
-    public Label status2;
-    public Label status3;
-    public Label status4;
+    public void newGame(List<Button> buttons, Label status1, Label status2, Label status3, Label status4) {
 
-    public void newGame(List<Button> buttons) {
         buttons.get(0).setText("CLICK");
         buttons.get(0).setDisable(false);
         buttons.get(1).setText("CLICK");
