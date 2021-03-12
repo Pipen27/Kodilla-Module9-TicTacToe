@@ -6,8 +6,8 @@ com/kodilla/TicTacToe/TieChecker.java
  com.kodilla.TicTacToe.TieChecker
 com/kodilla/TicTacToe/AllButtonsDisabler.java
  com.kodilla.TicTacToe.AllButtonsDisabler
-com/kodilla/TicTacToe/ButtonsCreator.java
- com.kodilla.TicTacToe.ButtonsCreator
+com/kodilla/TicTacToe/UserMover.java
+ com.kodilla.TicTacToe.UserMover
 com/kodilla/TicTacToe/WinOChecker.java
  com.kodilla.TicTacToe.WinOChecker
 com/kodilla/TicTacToe/NewGameButton.java
@@ -20,5 +20,5 @@ com/kodilla/TicTacToe/ComputerMover.java
  com.kodilla.TicTacToe.ComputerMover
 com/kodilla/TicTacToe/TicTacToe.java
  com.kodilla.TicTacToe.TicTacToe
-com/kodilla/TicTacToe/UserMover.java
- com.kodilla.TicTacToe.UserMover
+com/kodilla/TicTacToe/ButtonsCreator.java
+ com.kodilla.TicTacToe.ButtonsCreator

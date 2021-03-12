@@ -1,7 +1,6 @@
 package com.kodilla.TicTacToe;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -25,22 +24,16 @@ public class TicTacToe extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        NewGameButton newGameButton = new NewGameButton();
-        ExitGameButton exitGameButton = new ExitGameButton();
         ButtonsCreator buttonsCreator = new ButtonsCreator();
         UserMover userMover = new UserMover();
-
 
         List<Button> buttons = new ArrayList<>();
 
         buttonsCreator.createButtons(buttons);
-
-        Button newGameBtn = buttonsCreator.createNewGameButton(new Button("NEW GAME"));
-        newGameBtn.setOnAction((ActionEvent a) -> newGameButton.newGame(buttons, status1, status2, status3, status4));
-
-        Button exitGameBtn = buttonsCreator.createExitGameButton(new Button("EXIT GAME"));
-        exitGameBtn.setOnAction((ActionEvent a) -> exitGameButton.exitGame());
-
+        Button newGameBtn =  buttonsCreator.createNewGameButton();
+        buttonsCreator.setNewGameButton(newGameBtn, buttons, status1, status2, status3, status4);
+        Button exitGameBtn = buttonsCreator.createExitGameButton();
+        buttonsCreator.setExitGameButton(exitGameBtn);
 
         userMover.userMove(buttons, status1, status2, status3, status4);
 
