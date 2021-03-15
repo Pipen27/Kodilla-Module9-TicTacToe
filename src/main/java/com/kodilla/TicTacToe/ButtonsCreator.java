@@ -22,24 +22,19 @@ public class ButtonsCreator extends Button {
         }
     }
 
-    public Button createNewGameButton() {
+    public Button createNewGameButton(List<Button> buttons, Label status1, Label status2, Label status3, Label status4) {
 
-       return new Button("NEW GAME");
+        Button newGameBtn = new Button("NEW GAME");
+        newGameBtn.setOnAction((ActionEvent a) -> newGameButton.newGame(buttons, status1, status2, status3, status4));
+
+       return newGameBtn;
     }
 
     public Button createExitGameButton(){
 
-        return new Button("EXIT GAME");
-
-    }
-
-    public void setNewGameButton (Button newGameBtn, List<Button> buttons, Label status1, Label status2, Label status3, Label status4) {
-
-        newGameBtn.setOnAction((ActionEvent a) -> newGameButton.newGame(buttons, status1, status2, status3, status4));
-    }
-
-    public void setExitGameButton (Button exitGameBtn) {
-
+        Button exitGameBtn = new Button("EXIT GAME");
         exitGameBtn.setOnAction((ActionEvent a) -> exitGameButton.exitGame());
+
+        return exitGameBtn;
     }
 }

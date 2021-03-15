@@ -30,10 +30,8 @@ public class TicTacToe extends Application {
         List<Button> buttons = new ArrayList<>();
 
         buttonsCreator.createButtons(buttons);
-        Button newGameBtn =  buttonsCreator.createNewGameButton();
-        buttonsCreator.setNewGameButton(newGameBtn, buttons, status1, status2, status3, status4);
+        Button newGameBtn =  buttonsCreator.createNewGameButton(buttons, status1, status2, status3, status4);
         Button exitGameBtn = buttonsCreator.createExitGameButton();
-        buttonsCreator.setExitGameButton(exitGameBtn);
 
         userMover.userMove(buttons, status1, status2, status3, status4);
 
